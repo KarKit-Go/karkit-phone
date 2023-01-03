@@ -1,7 +1,7 @@
-import "../styles/Road.css";
-import "../assets/Road.png";
 import { ReactComponent as Car } from "../assets/Car.svg";
 import { ReactComponent as RoadSign } from "../assets/roadSign.svg";
+
+import "../styles/Road.css";
 
 const Road = () => {
   return (
