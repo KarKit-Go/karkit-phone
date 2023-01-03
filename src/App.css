@@ -1,38 +1,50 @@
+@media (orientation: landscape) {
+  .Setup {
+    display: none;
+  }
+  .Tip {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) {
+  .myApp {
+    display: none;
+  }
+  .Tip {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Tip {
+    text-align: center;
+  }
+  .myApp {
+    display: none;
+  }
+  .Setup {
+    display: none;
+  }
+}
+
+.myApp {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
-}
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  background: #000;
+  color: #fff;
+  /* display: flex;
+  flex-direction: row; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: url("./assets/Road.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
