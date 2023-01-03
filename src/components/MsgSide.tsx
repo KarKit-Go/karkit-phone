@@ -6,10 +6,11 @@ interface IDisplayMessage {
 }
 
 const DisplayMessage = (props: IDisplayMessage) => {
+  const { side_num, side_text } = props;
   return (
     <div className="message">
-      <div className="side-num">{props.side_num}</div>
-      <div className="side-text">{props.side_text}</div>
+      <div className="side-num">{side_num}</div>
+      <div className="side-text">{side_text}</div>
     </div>
   );
 };
